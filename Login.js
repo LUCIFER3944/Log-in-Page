@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const loginForm = document.querySelector('form');
+// document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.querySelector('#login');
 
-  loginForm.addEventListener('submit', function (event) {
-    event.preventDefault();
+  loginForm.addEventListener('click', function (event) {
+    // event.preventDefault();
 
     const userEmail = document.getElementById('user').value;
     const userPassword = document.getElementById('password').value;
@@ -13,4 +13,4 @@ document.addEventListener('DOMContentLoaded', function () {
       alert('Invalid email or password. Please try again.');
     }
   });
-});
+// });

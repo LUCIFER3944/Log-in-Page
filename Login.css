@@ -36,6 +36,7 @@ body{
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(15px);
+  background-color:rgba(24, 24, 24, 0.212);
 }
 
 .login-box h2 {
