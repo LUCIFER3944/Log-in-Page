@@ -1,11 +1,19 @@
-function login() {
-    var username = document.getElementById("user").value;
-    var password = document.getElementById("password").value;
+document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.querySelector('form');
 
-    // Basic validation, you should implement proper authentication logic here
-    if (username === "user@gmail.com" && password === "lol") {
-      alert("Login successful!");
+  loginForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get user input
+    const userEmail = document.getElementById('user').value;
+    const userPassword = document.getElementById('password').value;
+
+    // Perform basic validation (you should implement proper validation and authentication logic)
+    if (userEmail && userPassword) {
+      alert(`Login successful!\nEmail: ${userEmail}\nPassword: ${userPassword}`);
+      // Here you can redirect or perform other actions upon successful login
     } else {
-      alert("Invalid username or password. Please try again.");
+      alert('Invalid email or password. Please try again.');
     }
-  }
+  });
+});
